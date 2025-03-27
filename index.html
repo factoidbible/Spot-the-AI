@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can You Spot the AI Image?</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
 
+<div class="container">
+    <!-- Game Title -->
+    <h1> Can You Spot the AI-Generated Image?</h1>
+
+    <!-- Image Container -->
+    <div id="image-container" class="image-grid"></div>
+
+    <!-- Message Display -->
+    <div id="message"></div>
+
+    <!-- Countdown Timer -->
+    <div id="countdown-container" class="hidden">
+        <h2>⏱️ The next game will be available on Monday ⏱️</h2>
+        <p id="countdown">Loading...</p>
+    </div>
+</div>
+
+<!-- Include JS Files -->
+<script src="anti-cheat.js"></script>
+<script src="script.js"></script>
+
+</body>
 </html>
