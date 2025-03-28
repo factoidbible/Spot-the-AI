@@ -1,10 +1,19 @@
 {
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "A brief description of your project",
+  "main": "server.js", // or index.js, depending on your entry point
+  "scripts": {
+    "start": "node server.js" // or node index.js
+  },
   "dependencies": {
     "express": "^4.18.2",
     "body-parser": "^1.20.2",
     "bcrypt": "^5.1.0",
     "cookie-parser": "^1.4.6",
-    "dotenv": "^16.4.1",
-    "replit-db": "^2.0.0"
+    "dotenv": "^16.4.1"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
