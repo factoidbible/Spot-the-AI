@@ -12,8 +12,10 @@
     "bcrypt": "^5.1.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.1"
+<<<<<<< HEAD
   },
   "engines": {
     "node": "16.x"
+>>>>>>> fd1683180656c086def131af5f90e4488b1f4c9d
   }
 }
