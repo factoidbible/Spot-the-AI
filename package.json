@@ -1,10 +1,10 @@
 {
-  "name": "your-project-name",
+  "name": "spot-the-ai",
   "version": "1.0.0",
-  "description": "A brief description of your project",
-  "main": "server.js", // or index.js, depending on your entry point
+  "description": "Spot the AI game",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js" // or node index.js
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -12,10 +12,8 @@
     "bcrypt": "^5.1.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.1"
-<<<<<<< HEAD
   },
   "engines": {
-    "node": "16.x"
->>>>>>> fd1683180656c086def131af5f90e4488b1f4c9d
+    "node": "18.x"
   }
 }
