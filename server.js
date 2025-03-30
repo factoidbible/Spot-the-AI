@@ -1,16 +1,22 @@
-from flask import Flask, jsonify
-from replit import db
+// Import the express module
+const express = require('express');
+const app = express();
 
-app = Flask(__name__)
+// Set the port for the app
+const port = process.env.PORT || 3000;
 
-# Initialize visit count
-if "visits" not in db:
-    db["visits"] = 0
+// Define a basic route
+app.get('/', (req, res) => {
+  res.send('Welcome to Spot the AI!');
+});
 
-@app.route('/')
-def home():
-    db["visits"] += 1
-    return jsonify({"visits": db["visits"]})
+// Your routes for game logic, leaderboard, etc.
+app.get('/leaderboard', (req, res) => {
+  res.json({ message: 'Leaderboard data will go here.' });
+});
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
